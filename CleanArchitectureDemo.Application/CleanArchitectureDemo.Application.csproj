@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.8.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="DTOs\Email\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Features\Club\Commands\" />
+    <Folder Include="Features\Club\Queries\" />
+    <Folder Include="Features\Players\Commands\DeletePlayer\" />
+    <Folder Include="Features\Players\Commands\UpdatePlayer\" />
+    <Folder Include="Features\Players\Queries\GetAllPlayers\" />
+    <Folder Include="Features\Players\Queries\GetPlayerById\" />
+    <Folder Include="Features\Players\Queries\GetPlayersByClub\" />
+    <Folder Include="Features\Players\Queries\GetPlayersWithPagination\" />
+    <Folder Include="Features\Stadiums\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitectureDemo.Domain\CleanArchitectureDemo.Domain.csproj" />
+    <ProjectReference Include="..\CleanArchitectureDemo.Shared\CleanArchitectureDemo.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
