@@ -11,5 +11,4 @@ public class PlayerCreatedEvent : BaseEvent
   {
     Player = player;
   }
-
 }
