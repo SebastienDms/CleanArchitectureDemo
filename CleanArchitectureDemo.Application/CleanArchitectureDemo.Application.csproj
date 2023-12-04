@@ -18,7 +18,6 @@
   <ItemGroup>
     <Folder Include="Common\Exceptions\" />
     <Folder Include="DTOs\Email\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Features\Club\Commands\" />
     <Folder Include="Features\Club\Queries\" />
     <Folder Include="Features\Players\Commands\DeletePlayer\" />
@@ -26,7 +25,6 @@
     <Folder Include="Features\Players\Queries\GetAllPlayers\" />
     <Folder Include="Features\Players\Queries\GetPlayerById\" />
     <Folder Include="Features\Players\Queries\GetPlayersByClub\" />
-    <Folder Include="Features\Players\Queries\GetPlayersWithPagination\" />
     <Folder Include="Features\Stadiums\" />
   </ItemGroup>
 

@@ -16,10 +16,6 @@ public class Result<T> : IResult<T>
 
   public int Code { get; set; }
 
-  #region Non Async Methods 
-
-  #region Success Methods 
-
   public static Result<T> Success()
   {
     return new Result<T>
@@ -55,10 +51,6 @@ public class Result<T> : IResult<T>
       Data = data
     };
   }
-
-  #endregion
-
-  #region Failure Methods 
 
   public static Result<T> Failure()
   {
@@ -124,14 +116,6 @@ public class Result<T> : IResult<T>
     };
   }
 
-  #endregion
-
-  #endregion
-
-  #region Async Methods 
-
-  #region Success Methods 
-
   public static Task<Result<T>> SuccessAsync()
   {
     return Task.FromResult(Success());
@@ -151,10 +135,6 @@ public class Result<T> : IResult<T>
   {
     return Task.FromResult(Success(data, message));
   }
-
-  #endregion
-
-  #region Failure Methods 
 
   public static Task<Result<T>> FailureAsync()
   {
@@ -190,8 +170,4 @@ public class Result<T> : IResult<T>
   {
     return Task.FromResult(Failure(exception));
   }
-
-  #endregion
-
-  #endregion
 }
